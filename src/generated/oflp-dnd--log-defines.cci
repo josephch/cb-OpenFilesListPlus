@@ -1,0 +1,18 @@
+#ifdef   OFLP_LOG_DND
+    #define ERG_LOG(FORMAT, ...)    ERGCB_LOG(FORMAT, __VA_ARGS__);
+    #define ERG_TKI(FORMAT, ...)    ERGCB_TKI(FORMAT, __VA_ARGS__);
+    #define ERG_TKW(FORMAT, ...)    ERGCB_TKW(FORMAT, __VA_ARGS__);
+    #define ERG_TKE(FORMAT, ...)    ERGCB_TKE(FORMAT, __VA_ARGS__);
+    #define ERG_INF(FORMAT, ...)    ERGCB_INF(FORMAT, __VA_ARGS__);
+    #define ERG_WNG(FORMAT, ...)    ERGCB_WNG(FORMAT, __VA_ARGS__);
+    #define ERG_ERR(FORMAT, ...)    ERGCB_ERR(FORMAT, __VA_ARGS__);
+#else
+    #define ERG_LOG(FORMAT, ...)
+    #define ERG_TKI(FORMAT, ...)
+    #define ERG_TKW(FORMAT, ...)
+    #define ERG_TKE(FORMAT, ...)
+    #define ERG_INF(FORMAT, ...)
+    #define ERG_WNG(FORMAT, ...)
+    #define ERG_ERR(FORMAT, ...)
+#endif
+
