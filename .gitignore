@@ -1,5 +1,8 @@
-.git/*
 cb-oflp.depend
+.cache/
+OpenFilesListPlus.so
+OpenFilesListPlus.zip
+compile_commands.json
 
 obj/*
 
