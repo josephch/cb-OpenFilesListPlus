@@ -392,11 +392,9 @@ void            OpenFilesListPlusSettings:: z_build_widgets_02  (wxPoint& _scr_p
 //  ================================================================================================
 //  constructor specialized stuff -> linux
 //  ================================================================================================
-#ifdef  OFLP_LX
 //  ------------------------------------------------------------------------------------------------
 //  constructor specialized stuff -> linux -> wx-3.0.?
 //  ------------------------------------------------------------------------------------------------
-#if ( wxMAJOR_VERSION == 3 ) && ( wxMINOR_VERSION == 0 )
                 OpenFilesListPlusSettings:: OpenFilesListPlusSettings(
         wxWindow    *   _parent     ,
         wxPoint         _scr_pos    ,
@@ -432,5 +430,3 @@ void            OpenFilesListPlusSettings:: z_build_widgets_02   (wxPoint& _scr_
     dw_bs_main->Fit(this);
     dw_bs_main->Layout();
 }
-#endif
-#endif

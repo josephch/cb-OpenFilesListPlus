@@ -9,11 +9,13 @@
 #include    "oflp-plugin-module.hh"
 
 #include    "oflp-settings-options.hh"
+#include "wx/textctrl.h"
 //  ................................................................................................
 #include    <wx/sizer.h>
 #include    <wx/checkbox.h>
 #include    <wx/minifram.h>
 #include    <wx/collpane.h>
+#include <wx/stattext.h>
 /// ************************************************************************************************
 //! \class  OpenFilesListPlusSettings
 //!

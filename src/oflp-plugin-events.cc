@@ -434,7 +434,7 @@ void    OpenFilesListPlus:: evh_tree_item_right_click   (wxTreeEvent& event)
     }
 
     pt = inf.x_get_tree()->ClientToScreen(event.GetPoint());
-    inf.x_get_editor()->DisplayContextMenu(pt,mtOpenFilesList);
+    inf.x_get_editor()->DisplayContextMenu(pt,mtOpenFilesList, NULL);
 
     #endif
     //  ............................................................................................

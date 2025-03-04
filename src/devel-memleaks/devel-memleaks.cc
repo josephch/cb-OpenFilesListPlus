@@ -1,3 +1,4 @@
+#include "manager.h"
 #include    "sdk.h"
 //  ============================================================================
         Manager         *   s_manager           =   NULL;
@@ -42,7 +43,7 @@ EditorManager   *   Manager::GetEditorManager()                         const
 {
     return  s_editor_manager;
 }
-wxWindow        *   Manager::GetAppWindow()
+wxWindow        *   Manager::GetAppWindow() const
 {
     return  s_app_window;
 }
