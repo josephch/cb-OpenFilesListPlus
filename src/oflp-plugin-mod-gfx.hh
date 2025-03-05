@@ -95,10 +95,10 @@ class OflpModGfx   :   public  OflpModule
         wxBitmap    bmp;
         //  ........................................................................................
         // load bitmaps
-        bitmap_add( eBmpFolder       , _gfx_dir + wxS("folder_open.png")     );          // 0 folder
-        bitmap_add( eBmpFileAscii    , _gfx_dir + wxS("ascii.png")           );          // 1 file
-        bitmap_add( eBmpFileModified , _gfx_dir + wxS("modified_file.png")   );          // 2 modified file
-        bitmap_add( eBmpFileReadOnly , _gfx_dir + wxS("file-readonly.png")   );          // 3 read only file
+        bitmap_add( eBmpFolder       , wxXmlResource::Get()->LoadBitmap( wxString::FromUTF8("OFLPPH-folder_open")));          // 0 folder
+        bitmap_add( eBmpFileAscii    , wxXmlResource::Get()->LoadBitmap( wxString::FromUTF8("OFLPPH-ascii")));          // 1 file
+        bitmap_add( eBmpFileModified , wxXmlResource::Get()->LoadBitmap( wxString::FromUTF8("OFLPPH-folder_open")));          // 2 modified file
+        bitmap_add( eBmpFileReadOnly , wxXmlResource::Get()->LoadBitmap( wxString::FromUTF8("OFLPPH-file-readonly")));          // 3 read only file
 
 
         bitmap_add( eBmpBarGreen     , wxXmlResource::Get()->LoadBitmap( wxString::FromUTF8("OFLPPH-BBG")    ));     // add panel
